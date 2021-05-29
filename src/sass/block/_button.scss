@@ -1,0 +1,24 @@
+.btn{
+    background-color: $main_orange;
+    border: 2px solid $main_orange;
+    border-radius: 5px;
+    line-height: 60px;
+    font-family: Roboto;
+    font-size: 23px;
+    text-align: center;
+    cursor: pointer;
+
+    &_transparent{
+        background-color: transparent;
+        padding: 0 23px;
+        line-height: 50px;
+        transition: 0.5s ease;
+        &:hover{
+            background-color: $main_orange;
+            border-color: $main_orange ;
+        }
+    }
+
+
+}
+

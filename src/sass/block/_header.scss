@@ -1,0 +1,67 @@
+.header {
+    padding-top: 21px;
+    background-color: lightgreen;
+    &-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__logo{
+            position: relative;
+            width: 69px;
+            height: 59px;
+            &:after{
+                content: 'wildlife';
+                display: block;
+                position: absolute;
+                color: #ffffff;
+                font-family: Roboto;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 60px;
+                text-transform: uppercase;
+                top: 0;
+                left: 85px;
+                cursor: pointer;
+            }
+        }
+        &__menu{
+            width: 480px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            &_item{
+                border-bottom: 3px solid;
+                border-color: transparent;
+                transition: 0.5s ease;
+                &:nth-child(3){
+                    border: none;
+                }
+                a{
+                    color: $font_white;
+                    text-decoration: none;
+                    font-weight: 400;
+                    font-size: 23px;
+                }
+                &.center{
+                    width: 24px;
+                    height: 24px;
+                    svg{
+                        path{
+                            transition: 0.4s all ease;
+                            
+                        }
+                        &:hover{
+                            path{
+                                fill: $main_orange;
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    border-color: $font_white;
+                }
+            }
+        }
+    }
+}

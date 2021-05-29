@@ -1,12 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@import './base/variables';
 * {
     font-family: 'Open Sans', sans-serif;
     padding: 0;
     margin: 0;
 }
-
-p{
-   background-color: lightgreen;
-   color: blue;
+body {
+    max-width: 100%;
+    height: 100%;
 }
+
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@import './block/header';
+@import './block/button';
+
