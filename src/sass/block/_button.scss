@@ -5,8 +5,15 @@
     line-height: 60px;
     font-family: Roboto;
     font-size: 23px;
+    padding: 0 42px;
     text-align: center;
+    color: $font_white;
     cursor: pointer;
+    transition: 0.5s ease;
+    &:hover{
+        background-color: #E39128;
+        border-color: #E39128 ;
+    }
 
     &_transparent{
         background-color: transparent;

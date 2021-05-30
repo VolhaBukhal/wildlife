@@ -4,6 +4,7 @@
 @import './base/variables';
 * {
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -19,11 +20,12 @@ body {
 }
 
 .container{
-    width: 1200px;
+    max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
 @import './block/header';
 @import './block/button';
+@import './block/firstscreen.scss';
 
